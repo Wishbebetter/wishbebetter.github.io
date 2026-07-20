@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <author>
-    <name>John Doe</name>
+    <name>WBB</name>
   </author>
   <generator uri="https://hexo.io/">Hexo</generator>
   <id>https://wishbebetter.github.io/</id>
   <link href="https://wishbebetter.github.io/" rel="alternate"/>
   <link href="https://wishbebetter.github.io/atom.xml" rel="self"/>
-  <rights>All rights reserved 2026, John Doe</rights>
+  <rights>All rights reserved 2026, WBB</rights>
   <subtitle>WHERE</subtitle>
   <title>哒哒哒</title>
   <updated>2026-07-20T10:07:23.786Z</updated>
   <entry>
     <author>
-      <name>John Doe</name>
+      <name>WBB</name>
     </author>
     <content>
       <![CDATA[<p>所以我现在还没搞明白，.deploy_git把网站文件推送到哪了。靠。</p><p>那个butterfly的action执行失败可以勉强解释为是之前Jekyll导致的。</p><p>……懂了点，pages这个功能在deploy from a branch 里会根据当前分支的内容判断构建方法。如果有config.yml和md这些文件，会启用我在创建repo时候选的Jekyll（其实现在记不清了）。</p><p>而在分支只有静态资源时就不构建。</p><p>以下GPT对我的“指正”：</p><p>GitHub Pages 的 Deploy from a branch 模式，会把选择的分支作为网站来源。如果这个分支是源码形式，GitHub Pages 默认会尝试使用 Jekyll 构建；如果分支已经包含生成好的静态文件（HTML&#x2F;CSS&#x2F;JS），就可以直接托管。Hexo 的做法是自己生成静态文件，再把生成结果放到 gh-pages 分支，让 GitHub Pages 只负责托管。</p><p>个人网址搭建中！！！</p>]]>
@@ -31,7 +31,7 @@
   </entry>
   <entry>
     <author>
-      <name>John Doe</name>
+      <name>WBB</name>
     </author>
     <content>
       <![CDATA[<p>好，那么现在算基本成功了？</p>]]>
@@ -47,7 +47,7 @@
   </entry>
   <entry>
     <author>
-      <name>John Doe</name>
+      <name>WBB</name>
     </author>
     <category term="HEXO" scheme="https://wishbebetter.github.io/categories/HEXO/"/>
     <category term="HEXO" scheme="https://wishbebetter.github.io/tags/HEXO/"/>
@@ -66,7 +66,7 @@
   </entry>
   <entry>
     <author>
-      <name>John Doe</name>
+      <name>WBB</name>
     </author>
     <content>
       <![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]>
