@@ -293,7 +293,7 @@ aside:
       link: https://github.com/Wishbebetter
   card_announcement:
     enable: true
-    content: 目前没什么要广而告之的……
+    content: 毛坯装修中……
   card_recent_post:
     enable: true
     # If set 0 will show all
