@@ -103,7 +103,7 @@ theme: butterfly
 deploy:
   type: git
   repo: https://github.com/wishbebetter/wishbebetter.github.io.git
-  branch: main
+  branch: gh-pages
 
 # Sitemap:
 sitemap:
