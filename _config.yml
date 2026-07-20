@@ -104,3 +104,13 @@ deploy:
   type: git
   repo: https://github.com/wishbebetter/wishbebetter.github.io.git
   branch: main
+
+# Sitemap:
+sitemap:
+  path: sitemap.xml
+
+# RSS:
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
