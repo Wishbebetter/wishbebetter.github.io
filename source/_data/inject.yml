@@ -1,0 +1,3 @@
+head:
+  - <script src="/js/busuanzi-fix.js" defer></script>
+  - <script src="/js/busuanzi.min.js" defer></script>
