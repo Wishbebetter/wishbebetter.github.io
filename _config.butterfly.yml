@@ -97,7 +97,7 @@ background:
 
 cover:
   # Disable the cover or not
-  index_enable: true
+  index_enable: false
   aside_enable: true
   archives_enable: true
   # When cover is not set, the default cover is displayed
@@ -792,7 +792,7 @@ text_align_justify: false
 
 # Add a mask to the header and footer
 mask:
-  header: false
+  header: true
   footer: true
 
 # Loading Animation
