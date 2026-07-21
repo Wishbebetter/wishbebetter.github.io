@@ -300,7 +300,7 @@ aside:
     enable: true
     content: 毛坯装修中……
   card_recent_post:
-    enable: true
+    enable: false
     # If set 0 will show all
     limit: 3
     # Sort: date / updated
