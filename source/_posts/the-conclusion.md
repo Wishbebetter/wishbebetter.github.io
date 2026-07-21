@@ -20,3 +20,5 @@ GitHub Pages 的 Deploy from a branch 模式，会把选择的分支作为网站
 npm install npm uninstall
 
 在想办法验证vercount的dashboard，.well-known文件夹因为有.被特殊处理了。
+
+在 hexo g阶段因为没有加到include:里，所以被忽略。在github pages是因为jekyll会忽略.开头的文件夹所以没有创建网址。
