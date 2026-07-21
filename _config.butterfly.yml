@@ -22,7 +22,7 @@ menu:
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
-  Links /link/ || fas fa-link
+  Links: /link/ || fas fa-link
 
 # --------------------------------------
 # Code Blocks Settings
