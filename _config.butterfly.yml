@@ -68,16 +68,16 @@ avatar:
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img:
+default_top_img: /img/Dusk_Mucha.jpg
 
 # The banner image of index page
 index_img: /img/NHK.jpg
 
 # The banner image of archive page
-archive_img:
+archive_img: /img/Death_note.jpg
 
 # Note: tag page, not tags page
-tag_img:
+tag_img: /img/lucky_star.jpg
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
