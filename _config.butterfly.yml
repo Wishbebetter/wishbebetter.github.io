@@ -265,7 +265,7 @@ footer:
   nav:
   owner:
     enable: true
-    since: 2025
+    since: 2026
   # Copyright of theme and framework
   copyright:
     enable: true
@@ -369,9 +369,9 @@ rightside_bottom:
 
 # Conversion between Traditional and Simplified Chinese
 translate:
-  enable: false
+  enable: true
   # The text of a button
-  default: 繁
+  default: 2
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
   defaultEncoding: 2
   # Time delay
@@ -399,17 +399,18 @@ darkmode:
   end:
 
 # Show scroll percent in scroll-to-top button
-rightside_scroll_percent: false
+rightside_scroll_percent: true
 
 # Don't modify the following settings unless you know how they work
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
 # Don't repeat the same value
 rightside_item_order:
-  enable: false
+  enable: true
   # Default: readmode,translate,darkmode,hideAside
   hide:
   # Default: toc,chat,comment
-  show:
+  show: hideAside
+    - 
 
 # Animation for the bottom right config button
 rightside_config_animation: true
