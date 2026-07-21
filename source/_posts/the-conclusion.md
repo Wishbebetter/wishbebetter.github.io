@@ -18,3 +18,5 @@ GitHub Pages 的 Deploy from a branch 模式，会把选择的分支作为网站
 个人网址搭建中！！！
 
 npm install npm uninstall
+
+在想办法验证vercount的dashboard，.well-known文件夹因为有.被特殊处理了。
