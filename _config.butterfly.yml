@@ -311,7 +311,7 @@ aside:
     sort_order:
     limit: 6
     # Unit: mins, save data to localStorage
-    storage: 10
+    storage: 3
     avatar: true
   card_categories:
     enable: false
