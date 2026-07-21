@@ -24,8 +24,8 @@ menu:
   #   Movie: /movies/ || fas fa-video
   Links: /link/ || fas fa-link
   tags: /tags/ || fas fa-tags
-  Categories: /categories/ || fas fa-categories
-  archive: /archives/ || fas fa-archives
+  Categories: /categories/ || fas fa-folder
+  archive: /archives/ || fas fa-archive
 
 # --------------------------------------
 # Code Blocks Settings
