@@ -409,11 +409,7 @@ rightside_item_order:
   # Default: readmode,translate,darkmode,hideAside
   hide:
   # Default: toc,chat,comment
-  show:
-    - toc
-    - readmode
-    - hideAside
-    - darkmode
+  show: toc,readmode,hideAside,darkmode
 
 # Animation for the bottom right config button
 rightside_config_animation: true
