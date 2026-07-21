@@ -284,6 +284,9 @@ aside:
   # Position: left / right
   position: right
   display:
+    archive: true
+    tag: true
+    category: true
   card_author:
     enable: true
     description:
