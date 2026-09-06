@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>post</title>
-    <url>/2026/09/06/HEXO&amp;Butterfly/</url>
-    <content><![CDATA[<h2 id="写给我自己。"><a href="#写给我自己。" class="headerlink" title="写给我自己。"></a>写给我自己。</h2><p>发布文章是在source_posts下编辑md文档。</p>
-<p>还有libre-wolf浏览器里访问blog的vercount栏一直转圈是因为我用$\mu$block拦截请求了。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2026/07/20/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -24,5 +17,27 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>HEXO &amp; Butterfly 学习笔记</title>
+    <url>/2026/09/06/HEXO&amp;Butterfly/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>上次折腾个人博客在一个多月前了，靠着AI缝缝补补也是搭起来了。然而到了现在我连怎么发一篇文章都不会了，痛定思过！故有了这篇，同时也把以前试验性的文章撤下。</p>
+<p>发布文章是在source_posts下编辑md文档。</p>
+<p>还有libre-wolf浏览器里访问blog的vercount栏一直转圈是因为我用$\mu$block拦截请求了。</p>
+<p>所以我现在还没搞明白，.deploy_git把网站文件推送到哪了。靠。</p>
+<p>那个butterfly的action执行失败可以勉强解释为是之前Jekyll导致的。</p>
+<p>……懂了点，pages这个功能在deploy from a branch 里会根据当前分支的内容判断构建方法。如果有config.yml和md这些文件，会启用我在创建repo时候选的Jekyll（其实现在记不清了）。</p>
+<p>而在分支只有静态资源时就不构建。</p>
+<p>以下GPT对我的“指正”：</p>
+<p>GitHub Pages 的 Deploy from a branch 模式，会把选择的分支作为网站来源。如果这个分支是源码形式，GitHub Pages 默认会尝试使用 Jekyll 构建；如果分支已经包含生成好的静态文件（HTML&#x2F;CSS&#x2F;JS），就可以直接托管。Hexo 的做法是自己生成静态文件，再把生成结果放到 gh-pages 分支，让 GitHub Pages 只负责托管。</p>
+<p>个人网址搭建中！！！</p>
+<p>npm install npm uninstall</p>
+<p>在想办法验证vercount的dashboard，.well-known文件夹因为有.被特殊处理了。</p>
+<p>在 hexo g阶段因为没有加到include:里，所以被忽略。在github pages是因为jekyll会忽略.开头的文件夹所以没有创建网址。</p>
+]]></content>
+      <tags>
+        <tag>HEXO</tag>
+        <tag>Butterfly</tag>
+      </tags>
   </entry>
 </search>
