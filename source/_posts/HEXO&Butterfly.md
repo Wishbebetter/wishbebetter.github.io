@@ -1,8 +1,19 @@
 ---
-title: the conclusion
-date: 2026-07-20 17:23:19
+title: "HEXO & Butterfly 学习笔记"
+date: 2026-09-06 16:03:07
 tags:
+  - HEXO
+  - Butterfly
 ---
+
+## 前言
+
+上次折腾个人博客在一个多月前了，靠着AI缝缝补补也是搭起来了。然而到了现在我连怎么发一篇文章都不会了，痛定思过！故有了这篇，同时也把以前试验性的文章撤下。
+
+发布文章是在source\_posts下编辑md文档。
+
+还有libre-wolf浏览器里访问blog的vercount栏一直转圈是因为我用$\mu$block拦截请求了。
+
 所以我现在还没搞明白，.deploy_git把网站文件推送到哪了。靠。
 
 那个butterfly的action执行失败可以勉强解释为是之前Jekyll导致的。
