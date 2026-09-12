@@ -4,6 +4,9 @@ date: 2026-09-06 16:03:07
 tags:
   - HEXO
   - Butterfly
+description: 记录我的 Hexo 博客搭建过程
+cover:
+  image: /img/NHK.jpg
 ---
 
 ## 前言
