@@ -6,7 +6,7 @@ tags:
   - Butterfly
 description: 记录我的 Hexo 博客搭建过程
 cover:
-  image: /img/NHK.jpg
+  image: /img/lucky_star.jpg
 ---
 
 ## 前言
