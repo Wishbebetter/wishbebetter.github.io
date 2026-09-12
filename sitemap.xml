@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wishbebetter.github.io/2026/09/06/HEXO&Butterfly/</loc>
+    <loc>https://genanice.top/2026/09/06/HEXO&Butterfly/</loc>
     
     <lastmod>2026-09-12</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://wishbebetter.github.io/about/index.html</loc>
+    <loc>https://genanice.top/about/index.html</loc>
     
     <lastmod>2026-09-10</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://wishbebetter.github.io/2026/09/06/Matrix-deployment/</loc>
+    <loc>https://genanice.top/2026/09/06/Matrix-deployment/</loc>
     
     <lastmod>2026-09-07</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://wishbebetter.github.io/archives/index.html</loc>
+    <loc>https://genanice.top/archives/index.html</loc>
     
     <lastmod>2026-07-21</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://wishbebetter.github.io/link/index.html</loc>
+    <loc>https://genanice.top/link/index.html</loc>
     
     <lastmod>2026-07-20</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://wishbebetter.github.io/tags/index.html</loc>
+    <loc>https://genanice.top/tags/index.html</loc>
     
     <lastmod>2026-07-20</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://wishbebetter.github.io/categories/index.html</loc>
+    <loc>https://genanice.top/categories/index.html</loc>
     
     <lastmod>2026-07-20</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://wishbebetter.github.io/2026/07/20/hello-world/</loc>
+    <loc>https://genanice.top/2026/07/20/hello-world/</loc>
     
     <lastmod>2026-07-20</lastmod>
     
@@ -75,7 +75,7 @@
   
 
   <url>
-    <loc>https://wishbebetter.github.io/</loc>
+    <loc>https://genanice.top/</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -83,21 +83,21 @@
 
   
   <url>
-    <loc>https://wishbebetter.github.io/tags/Matrix/</loc>
+    <loc>https://genanice.top/tags/HEXO/</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wishbebetter.github.io/tags/HEXO/</loc>
+    <loc>https://genanice.top/tags/Butterfly/</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wishbebetter.github.io/tags/Butterfly/</loc>
+    <loc>https://genanice.top/tags/Matrix/</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
