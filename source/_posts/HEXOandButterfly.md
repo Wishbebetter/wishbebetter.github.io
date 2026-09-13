@@ -1,13 +1,12 @@
 ---
-title: "HEXO & Butterfly 学习笔记"
+title: "HEXOandButterfly 学习笔记"
 date: 2026-09-06 16:03:07
-layout: post
+type: post
 tags:
   - HEXO
   - Butterfly
 description: 记录我的 Hexo 博客搭建过程
-cover:
-  image: /img/lucky_star.jpg
+cover: /img/lucky_star.jpg
 ---
 
 ## 前言
@@ -19,11 +18,22 @@ cover:
 ## 在部署butterfly-themed HEXO时遇到的坑
 
 1. GitHub-pages默认的静态网站生成器（Static Site Generator，SSG）是Jekll，所以如果使用它之外的SSG，（我这里是）要在main branch的source文件夹（就是gh-pages分支的根目录）下创建名为.nojekyll的空文件。不然会导致github-action失败。
+
 2. busuanzi的后端统计API似乎不可用了，需要自己（或者用AI）捏一个适配器来使用别的服务。
+
 3. 统计uv和pv的时候会把自己的访问也计入，我为了方便是用$\mu$block拦截请求，不过坏处是只能在后台看到统计了。
+
 4. HEXO默认会忽略 *.* 开头的文件夹比如.well-known，需要在_config.yml的include:里手动添加。
+
 5. 尽量避免&这样的特殊字符作为标题，可能会导致html文件语法错误——比如index.html。
-6. 善用AI
+
+6. _config.butterfly.yml里的tag，和category都是tags和categories的子页面。
+
+7. 关于文章封面格式：是 cover: /img/lucky_star.jpg 而不是
+   cover:
+   image: /img/lucky_star.jpg
+
+8. 善用AI
 
 GPT：
 
