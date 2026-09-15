@@ -1,0 +1,19 @@
+#page-header {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 65%,
+    rgba(0, 0, 0, 0.8) 75%,
+    rgba(0, 0, 0, 0.4) 88%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 65%,
+    rgba(0, 0, 0, 0.8) 75%,
+    rgba(0, 0, 0, 0.4) 88%,
+    transparent 100%
+  );
+}
