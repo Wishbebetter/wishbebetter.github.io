@@ -1,49 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Learn_cs61a_on_a_VPS</title>
-    <url>/2026/09/14/Learn-cs61a-on-a-VPS/</url>
-    <content><![CDATA[<h2 id="事前准备"><a href="#事前准备" class="headerlink" title="事前准备"></a>事前准备</h2><p>由于电脑比较笨重，还要充电器。所以使用iPad+ssh连接VPS的方法。</p>
-<blockquote>
-<p>[!TIP]<br>在.ssh文件夹创建config并:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host (alias)</span><br><span class="line">   HostName (IP address)</span><br><span class="line">   User (like: root)</span><br><span class="line">   IdentityFile (like: ~/.ssh/id_ed25519)</span><br></pre></td></tr></table></figure>
-<p>后可以直接:<br>ssh alias<br>和<br>scp src alias:dst-folder</p>
-</blockquote>
-<p>进行测试需安装 pytest 和 pygrader。</p>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
-      <categories>
-        <category>cs62a</category>
-      </categories>
-      <tags>
-        <tag>VPS</tag>
-        <tag>linux</tag>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Matrix_deployment</title>
-    <url>/2026/09/06/encoutered_in_snikket/</url>
-    <content><![CDATA[<p>其实我本来想部署matrix的。但是看了</p>
-<p><a href="https://www.techug.com/post/self-hosting-a-matrix-server-for-5-years/">https://www.techug.com/post/self-hosting-a-matrix-server-for-5-years/</a></p>
-<p>后转向了snikket。</p>
-<p>注意部署Snikket后Snikket-Nginx将会占据重要端口比如443。</p>
-<h2 id="如何修改用户权限："><a href="#如何修改用户权限：" class="headerlink" title="如何修改用户权限："></a>如何修改用户权限：</h2><p>进入Prosody</p>
-<p>执行</p>
-<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">room._affiliations[<span class="string">&quot;账户域名&quot;</span>] = <span class="string">&quot;owner&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>确认</p>
-<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">room._affiliations[<span class="string">&quot;账户域名&quot;</span>]</span><br></pre></td></tr></table></figure>
-<p>返回owner则修改成功。</p>
-<p>持久化保存</p>
-<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">room:save()</span><br></pre></td></tr></table></figure>
-<p>返回Result: true</p>
-]]></content>
-      <tags>
-        <tag>Matrix</tag>
-        <tag>Snikket</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HEXOandButterfly 学习笔记</title>
     <url>/2026/09/06/HEXOandButterfly/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>上次折腾个人博客在一个多月前了，靠着AI缝缝补补也是搭起来了。然而到了现在我连怎么发一篇文章都不会了，痛定思过！故有了这篇，同时也把以前试验性的文章撤下。</p>
@@ -75,6 +32,26 @@
       </tags>
   </entry>
   <entry>
+    <title>Learn_cs61a_on_a_VPS</title>
+    <url>/2026/09/14/Learn-cs61a-on-a-VPS/</url>
+    <content><![CDATA[<h2 id="事前准备"><a href="#事前准备" class="headerlink" title="事前准备"></a>事前准备</h2><p>由于电脑比较笨重，还要充电器。所以使用iPad+ssh连接VPS的方法。</p>
+<blockquote>
+<p>[!TIP]<br>在.ssh文件夹创建config并:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host (alias)</span><br><span class="line">   HostName (IP address)</span><br><span class="line">   User (like: root)</span><br><span class="line">   IdentityFile (like: ~/.ssh/id_ed25519)</span><br></pre></td></tr></table></figure>
+<p>后可以直接:<br>ssh alias<br>和<br>scp src alias:dst-folder</p>
+</blockquote>
+<p>进行测试需安装 pytest 和 pygrader。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+      <categories>
+        <category>cs62a</category>
+      </categories>
+      <tags>
+        <tag>VPS</tag>
+        <tag>linux</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2026/07/20/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -91,5 +68,28 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Matrix_deployment</title>
+    <url>/2026/09/06/encoutered_in_snikket/</url>
+    <content><![CDATA[<p>其实我本来想部署matrix的。但是看了</p>
+<p><a href="https://www.techug.com/post/self-hosting-a-matrix-server-for-5-years/">https://www.techug.com/post/self-hosting-a-matrix-server-for-5-years/</a></p>
+<p>后转向了snikket。</p>
+<p>注意部署Snikket后Snikket-Nginx将会占据重要端口比如443。</p>
+<h2 id="如何修改用户权限："><a href="#如何修改用户权限：" class="headerlink" title="如何修改用户权限："></a>如何修改用户权限：</h2><p>进入Prosody</p>
+<p>执行</p>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">room._affiliations[<span class="string">&quot;账户域名&quot;</span>] = <span class="string">&quot;owner&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>确认</p>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">room._affiliations[<span class="string">&quot;账户域名&quot;</span>]</span><br></pre></td></tr></table></figure>
+<p>返回owner则修改成功。</p>
+<p>持久化保存</p>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">room:save()</span><br></pre></td></tr></table></figure>
+<p>返回Result: true</p>
+]]></content>
+      <tags>
+        <tag>Matrix</tag>
+        <tag>Snikket</tag>
+      </tags>
   </entry>
 </search>
