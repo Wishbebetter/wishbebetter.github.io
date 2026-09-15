@@ -10,7 +10,7 @@
   <rights>All rights reserved 2026, WBB</rights>
   <subtitle>(╹ڡ╹ )</subtitle>
   <title>𝑾𝑩𝑩'𝒔 𝑩𝒍𝒐𝒈</title>
-  <updated>2026-09-14T15:10:56.868Z</updated>
+  <updated>2026-09-15T04:40:23.886Z</updated>
   <entry>
     <author>
       <name>WBB</name>
@@ -20,14 +20,14 @@
     <category term="linux" scheme="https://genanice.top/tags/linux/"/>
     <category term="python" scheme="https://genanice.top/tags/python/"/>
     <content>
-      <![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]>
+      <![CDATA[<h2 id="事前准备"><a href="#事前准备" class="headerlink" title="事前准备"></a>事前准备</h2><p>由于电脑比较笨重，还要充电器。所以使用iPad+ssh连接VPS的方法。</p><blockquote><p>[!TIP]<br>在.ssh文件夹创建config并:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Host (alias)</span><br><span class="line">   HostName (IP address)</span><br><span class="line">   User (like: root)</span><br><span class="line">   IdentityFile (like: ~/.ssh/id_ed25519)</span><br></pre></td></tr></table></figure><p>后可以直接:<br>ssh alias<br>和<br>scp src alias:dst-folder</p></blockquote><p>进行测试需安装 pytest 和 pygrader。</p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]>
     </content>
     <id>https://genanice.top/2026/09/14/Learn-cs61a-on-a-VPS/</id>
     <link href="https://genanice.top/2026/09/14/Learn-cs61a-on-a-VPS/"/>
     <published>2026-09-14T13:14:09.000Z</published>
     <summary>学习cs61a的记录</summary>
     <title>Learn_cs61a_on_a_VPS</title>
-    <updated>2026-09-14T15:10:56.868Z</updated>
+    <updated>2026-09-15T04:40:23.886Z</updated>
   </entry>
   <entry>
     <author>
