@@ -103,32 +103,6 @@ image: /img/lucky_star.jpg</p>
       </tags>
   </entry>
   <entry>
-    <title>Learn_cs61a_on_a_VPS</title>
-    <url>/2026/09/14/Learn-cs61a-on-a-VPS/</url>
-    <content><![CDATA[<h2 id="事前准备">事前准备</h2>
-<p>由于电脑比较笨重，还要充电器。所以使用iPad+ssh连接VPS的方法。</p>
-<blockquote>
-<p>[!TIP]<br>
-在.ssh文件夹创建config并:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host (alias)</span><br><span class="line">   HostName (IP address)</span><br><span class="line">   User (like: root)</span><br><span class="line">   IdentityFile (like: ~/.ssh/id_ed25519)</span><br></pre></td></tr></table></figure>
-<p>后可以直接:<br>
-ssh alias<br>
-和<br>
-scp src alias:dst-folder</p>
-</blockquote>
-<p>进行测试需安装 pytest 和 pygrader。</p>
-<h2 id=""></h2>
-]]></content>
-      <categories>
-        <category>cs61a</category>
-      </categories>
-      <tags>
-        <tag>VPS</tag>
-        <tag>Linux</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2026/07/20/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -168,6 +142,32 @@ scp src alias:dst-folder</p>
       <tags>
         <tag>Matrix</tag>
         <tag>Snikket</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Learn_cs61a_on_a_VPS</title>
+    <url>/2026/09/14/Learn-cs61a-on-a-VPS/</url>
+    <content><![CDATA[<h2 id="事前准备">事前准备</h2>
+<p>由于电脑比较笨重，还要充电器。所以使用iPad+ssh连接VPS的方法。</p>
+<blockquote>
+<p>[!TIP]<br>
+在.ssh文件夹创建config并:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host (alias)</span><br><span class="line">   HostName (IP address)</span><br><span class="line">   User (like: root)</span><br><span class="line">   IdentityFile (like: ~/.ssh/id_ed25519)</span><br></pre></td></tr></table></figure>
+<p>后可以直接:<br>
+ssh alias<br>
+和<br>
+scp src alias:dst-folder</p>
+</blockquote>
+<p>进行测试需安装 pytest 和 pygrader。</p>
+<h2 id=""></h2>
+]]></content>
+      <categories>
+        <category>cs61a</category>
+      </categories>
+      <tags>
+        <tag>VPS</tag>
+        <tag>Linux</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
 </search>
