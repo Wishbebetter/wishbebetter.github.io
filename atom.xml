@@ -10,15 +10,31 @@
   <rights>All rights reserved 2026, WBB</rights>
   <subtitle>(╹ڡ╹ )</subtitle>
   <title>𝑾𝑩𝑩'𝒔 𝑩𝒍𝒐𝒈</title>
-  <updated>2026-09-15T04:40:23.886Z</updated>
+  <updated>2026-09-22T11:19:32.997Z</updated>
   <entry>
     <author>
       <name>WBB</name>
     </author>
-    <category term="cs62a" scheme="https://genanice.top/categories/cs62a/"/>
+    <category term="clutter" scheme="https://genanice.top/categories/clutter/"/>
+    <category term="Math" scheme="https://genanice.top/tags/Math/"/>
+    <content>
+      <![CDATA[<p>先上相关的论文：</p><p><a href="The_Locker_Puzzle.pdf">The Locker Puzzle</a></p><h1 id="preface-copied"><a href="#preface-copied" class="headerlink" title="preface(copied)"></a>preface(copied)</h1><p>#math</p><p>Philippe Flajolet和Robert Sedgewick在2009年提出了“百囚犯问题(prisoners problem）”：</p><p>在某个法制不健全的国家， 监狱中有编号1到100的100名死刑犯。监狱长给了他们最后一次机会：</p><p>一个房间里有100个抽屉，监狱长随意地把1到100这100个号码放入1号到100号抽屉中，每个抽屉一张。囚犯们逐个进入房间，每人可以任意打开50个抽屉，之后关上。如果每名囚犯都在这50个抽屉中发现了他的号码，那么<strong>所有的</strong>犯人都会被赦免；如果有人没有找到他的号码，那么<strong>所有的</strong>囚犯都会被处死。在第一个囚犯进入房间之前，囚犯们允许一起讨论开抽屉的“策略”，但一旦第一个囚犯进入房间，他们之间就被禁止交流。</p><p>如果纯粹随机开抽屉，那么所有人都被赦免的概率只有$\left( \frac{1}{2} \right)^{100}$。</p><p>囚犯有什么其他的好策略么?</p><h1 id="strategy"><a href="#strategy" class="headerlink" title="strategy"></a>strategy</h1><p>根据我的理解，似乎是将独立事件变为相关事件。</p><p>如果是随机选择，则这100个事件相互独立。</p><p>抽屉号码与纸上号码（就当写在纸上了）形成映射</p><p>$$<br>\begin{align}<br>\begin{bmatrix}<br>x_{1}\to y_{1} \<br>\vdots ~ \to ~ \vdots \<br>x_{n}\to y_{n}<br>\end{bmatrix}<br>\end{align}<br>$$</p><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>采用：第i个人找第i个抽屉，如果未找到自己的号码，则找序号等于纸上号码的抽屉。</p><p>采用这种策略会导致：如果第i个人在找了j次后找到了自己的号码，则在寻找过程中的（j-1）个人也将在j次后找到自己的号码。</p><p>则该问题转化为：出现大于50次找寻的循环序列的概率是多少？</p><p>对于k个数，环状序列的排序方法有：k!个。</p><p>一个有n个不重复序列最多可以分解为n个循环，最少可以分为1个。</p><p>那么对于一个有n个数字的序列，存在一个k个数字的循环时可有的排序数是：(k-1)!（注意初始数位置的选定是有意义的，因为还有其他数.但是选定的数都不能选择对应序号的位置，否则无法形成循环）</p><p>所以对于n个数，出现k个数形成的循环概率是：</p><p>$$<br>\begin{align}<br>\text{总排列} &amp; \quad n! \<br>\text{有k循环的排列数} &amp; \quad \underset{在n个数里选k个数}{\underline{C_{k}^{n}}} \underset{k个数的排列}{\underline{(k-1)!}} \underset{剩余数的排列}{\underline{(k-n)!}} &#x3D; \frac{n!}{k} \<br>\text{所以概率为: } &amp; \frac{1}{k} \<br>\text{有大于等于k的循环概率为} \sum^{n}<em>{k} \frac{1}{i} \<br>\text{当n趋于无穷时:} \int^{n}</em>{k} \frac{1}{x}dx &#x3D; \ln \frac{n}{k} \<br>\end{align}<br>$$</p><p>所以囚犯存活的概率大于(1-$\ln 2$) $\approx$ 31%</p>]]>
+    </content>
+    <id>https://genanice.top/2026/09/22/100-prisonals/</id>
+    <link href="https://genanice.top/2026/09/22/100-prisonals/"/>
+    <published>2026-09-22T11:10:42.000Z</published>
+    <summary>有趣的百囚徒问题</summary>
+    <title>100-prisonals</title>
+    <updated>2026-09-22T11:19:32.997Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>WBB</name>
+    </author>
+    <category term="cs61a" scheme="https://genanice.top/categories/cs61a/"/>
     <category term="VPS" scheme="https://genanice.top/tags/VPS/"/>
-    <category term="linux" scheme="https://genanice.top/tags/linux/"/>
-    <category term="python" scheme="https://genanice.top/tags/python/"/>
+    <category term="Linux" scheme="https://genanice.top/tags/Linux/"/>
+    <category term="Python" scheme="https://genanice.top/tags/Python/"/>
     <content>
       <![CDATA[<h2 id="事前准备"><a href="#事前准备" class="headerlink" title="事前准备"></a>事前准备</h2><p>由于电脑比较笨重，还要充电器。所以使用iPad+ssh连接VPS的方法。</p><blockquote><p>[!TIP]<br>在.ssh文件夹创建config并:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Host (alias)</span><br><span class="line">   HostName (IP address)</span><br><span class="line">   User (like: root)</span><br><span class="line">   IdentityFile (like: ~/.ssh/id_ed25519)</span><br></pre></td></tr></table></figure><p>后可以直接:<br>ssh alias<br>和<br>scp src alias:dst-folder</p></blockquote><p>进行测试需安装 pytest 和 pygrader。</p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]>
     </content>
@@ -27,7 +43,7 @@
     <published>2026-09-14T13:14:09.000Z</published>
     <summary>学习cs61a的记录</summary>
     <title>Learn_cs61a_on_a_VPS</title>
-    <updated>2026-09-15T04:40:23.886Z</updated>
+    <updated>2026-09-22T11:13:35.933Z</updated>
   </entry>
   <entry>
     <author>
