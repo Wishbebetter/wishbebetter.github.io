@@ -64,10 +64,15 @@ $$
 $$
 \begin{align}
 \text{总排列} & \quad n! \\
+
 \text{有k循环的排列数} & \quad \underset{在n个数里选k个数}{\underline{C_{k}^{n}}} \underset{k个数的排列}{\underline{(k-1)!}} \underset{剩余数的排列}{\underline{(k-n)!}} = \frac{n!}{k} \\
+
 \text{所以概率为: } & \frac{1}{k} \\
-\text{有大于等于k的循环概率为} \sum^{n}_{k} \frac{1}{i} \\
-\text{当n趋于无穷时:} \int^{n}_{k} \frac{1}{x}dx = \ln \frac{n}{k} \\
+
+\text{有大于等于k的循环概率为} & \sum^{n}_{k} \frac{1}{i} \\
+
+\text{当n趋于无穷时:} \int^{n}_{k} \frac{1}{x}dx & = \ln \frac{n}{k} \\
+
 \end{align}
 $$
 
