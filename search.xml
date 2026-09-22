@@ -68,6 +68,12 @@ $$</p>
 <p>\ln\frac{n}{k}
 \end{aligned}
 $$</p>
+<p>$$
+\begin{aligned}
+a &amp;= b \
+c &amp;= d
+\end{aligned}
+$$</p>
 ]]></content>
       <categories>
         <category>clutter</category>
