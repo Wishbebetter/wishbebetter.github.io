@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 𝑾𝑩𝑩'𝒔 𝑩𝒍𝒐𝒈
+title: "𝑾𝑩𝑩'𝒔 𝑩𝒍𝒐𝒈"
 subtitle: ''
 description: '(╹ڡ╹ )'
 keywords: Blog
@@ -122,12 +122,3 @@ feed:
   type: atom
   path: atom.xml
   limit: 20
-
-# 自定义
-
-markdown:
-  render:
-    html: true
-    xhtmlOut: true
-    breaks: false
-    linkify: true

@@ -10,6 +10,7 @@ description: 有趣的百囚徒问题
 cover:
 permalink:
 ---
+
 先上相关的论文：
 
 [The Locker Puzzle](The_Locker_Puzzle.pdf)
@@ -36,13 +37,13 @@ Philippe Flajolet和Robert Sedgewick在2009年提出了“百囚犯问题(prison
 抽屉号码与纸上号码（就当写在纸上了）形成映射
 
 $$
-\begin{align}
+\begin{aligned}
 \begin{bmatrix}
 x_{1}\to y_{1} \\
 \vdots ~ \to ~ \vdots \\
 x_{n}\to y_{n}
 \end{bmatrix}
-\end{align}
+\end{aligned}
 $$
 
 ## 正文
@@ -62,18 +63,25 @@ $$
 所以对于n个数，出现k个数形成的循环概率是：
 
 $$
-\begin{align}
-\text{总排列} & \quad n! \\
+\begin{aligned}
+\text{总排列} \quad n! \\
 
-\text{有k循环的排列数} & \quad \underset{在n个数里选k个数}{\underline{C_{k}^{n}}} \underset{k个数的排列}{\underline{(k-1)!}} \underset{剩余数的排列}{\underline{(k-n)!}} = \frac{n!}{k} \\
+\text{有k循环的排列数} \quad \underset{在n个数里选k个数}{\underline{C_{k}^{n}}} \underset{k个数的排列}{\underline{(k-1)!}} \underset{剩余数的排列}{\underline{(k-n)!}} = \frac{n!}{k} \\
 
-\text{所以概率为: } & \frac{1}{k} \\
+\text{所以概率为: } \frac{1}{k} \\
 
-\text{有大于等于k的循环概率为} & \sum^{n}_{k} \frac{1}{i} \\
+\text{有大于等于k的循环概率为} \sum^{n}_{k} \frac{1}{i} \\
 
-\text{当n趋于无穷时:} \int^{n}_{k} \frac{1}{x}dx & = \ln \frac{n}{k} \\
+\text{当n趋于无穷时:} \int^{n}_{k} \frac{1}{x}dx = \ln \frac{n}{k}
 
-\end{align}
+\end{aligned}
 $$
 
 所以囚犯存活的概率大于(1-$\ln 2$) $\approx$ 31%
+
+$$
+\begin{matrix}
+a&b\\
+c&d
+\end{matrix}
+$$
