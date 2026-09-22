@@ -101,6 +101,13 @@
 
   
   <url>
+    <loc>https://genanice.top/tags/Math/</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://genanice.top/tags/HEXO/</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -149,24 +156,17 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://genanice.top/tags/Math/</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
-    <loc>https://genanice.top/categories/cs61a/</loc>
+    <loc>https://genanice.top/categories/clutter/</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://genanice.top/categories/clutter/</loc>
+    <loc>https://genanice.top/categories/cs61a/</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
