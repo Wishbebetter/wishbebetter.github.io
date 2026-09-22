@@ -35,12 +35,12 @@ $$</p>
 <p>所以对于n个数，出现k个数形成的循环概率是：</p>
 <p>$$
 \begin{align}
-\text{总排列} &amp; \quad n! \
-\text{有k循环的排列数} &amp; \quad \underset{在n个数里选k个数}{\underline{C_{k}^{n}}} \underset{k个数的排列}{\underline{(k-1)!}} \underset{剩余数的排列}{\underline{(k-n)!}} = \frac{n!}{k} \
-\text{所以概率为: } &amp; \frac{1}{k} \
-\text{有大于等于k的循环概率为} \sum^{n}<em>{k} \frac{1}{i} \
-\text{当n趋于无穷时:} \int^{n}</em>{k} \frac{1}{x}dx = \ln \frac{n}{k} \
-\end{align}
+\text{总排列} &amp; \quad n! \</p>
+<p>\text{有k循环的排列数} &amp; \quad \underset{在n个数里选k个数}{\underline{C_{k}^{n}}} \underset{k个数的排列}{\underline{(k-1)!}} \underset{剩余数的排列}{\underline{(k-n)!}} = \frac{n!}{k} \</p>
+<p>\text{所以概率为: } &amp; \frac{1}{k} \</p>
+<p>\text{有大于等于k的循环概率为} &amp; \sum^{n}_{k} \frac{1}{i} \</p>
+<p>\text{当n趋于无穷时:} \int^{n}_{k} \frac{1}{x}dx &amp; = \ln \frac{n}{k} \</p>
+<p>\end{align}
 $$</p>
 <p>所以囚犯存活的概率大于(1-$\ln 2$) $\approx$ 31%</p>
 ]]></content>
