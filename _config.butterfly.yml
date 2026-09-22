@@ -73,13 +73,13 @@ disable_top_img: false
 default_top_img: /img/Dusk_Mucha.jpg
 
 # The banner image of index page
-index_img: /img/NHK.jpg
+index_img: /img/NHK.svg
 
 # The banner image of archive page
-archive_img: /img/Death_note.jpg
+archive_img: 
 
 # Note: tag page, not tags page
-tag_img: /img/lucky_star.jpg
+tag_img: 
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
@@ -95,12 +95,12 @@ category_img:
 category_per_img:
 
 # The background image of footer
-footer_img: /img/footer_background.svg
+footer_img: /img/crazyness_background.svg
 
 # Website Background
 # Can set it to color, image URL or an array containing colors and/or image URLs
 # If an array is provided, a random background will be selected from the array on each load
-background: /img/web_background.svg
+background: /img/smooth_background.svg
 
 cover:
   # Disable the cover or not
@@ -461,7 +461,7 @@ busuanzi:
 math:
   # Choose: mathjax, katex
   # Leave it empty if you don't need math
-  use:
+  use: mathjax
   per_page: true
   hide_scrollbar: false
 
@@ -1072,6 +1072,7 @@ css_prefix: true
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
+    - <link rel="stylesheet" href="/css/custom.css">
     - <script src="/js/vercount-adapter.js"></script>
     - <script defer src="https://events.vercount.one/js"></script>
   bottom:
