@@ -78,10 +78,3 @@ $$
 $$
 
 所以囚犯存活的概率大于(1-$\ln 2$) $\approx$ 31%
-
-$$
-\begin{matrix}
-a&b\\
-c&d
-\end{matrix}
-$$

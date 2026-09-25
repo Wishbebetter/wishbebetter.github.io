@@ -15,9 +15,3 @@
     transparent 94%
   );
 }
-
-.katex-display {
-  overflow-x: auto;
-  overflow-y: visible;
-  padding: 10px 0;
-}
