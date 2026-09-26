@@ -57,6 +57,32 @@ M347 1759 V0 H263 V1759 v600 v1759 h84z"/></svg></span></span></span><span class
       </tags>
   </entry>
   <entry>
+    <title>Learn_cs61a_on_a_VPS</title>
+    <url>/2026/09/14/Learn-cs61a-on-a-VPS/</url>
+    <content><![CDATA[<h2 id="事前准备">事前准备</h2>
+<p>由于电脑比较笨重，还要充电器。所以使用iPad+ssh连接VPS的方法。</p>
+<blockquote>
+<p>[!TIP]<br>
+在.ssh文件夹创建config并:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host (alias)</span><br><span class="line">   HostName (IP address)</span><br><span class="line">   User (like: root)</span><br><span class="line">   IdentityFile (like: ~/.ssh/id_ed25519)</span><br></pre></td></tr></table></figure>
+<p>后可以直接:<br>
+ssh alias<br>
+和<br>
+scp src alias:dst-folder</p>
+</blockquote>
+<p>进行测试需安装 pytest 和 pygrader。</p>
+<h2 id=""></h2>
+]]></content>
+      <categories>
+        <category>cs61a</category>
+      </categories>
+      <tags>
+        <tag>VPS</tag>
+        <tag>Linux</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HEXOandButterfly 学习笔记</title>
     <url>/2026/09/06/HEXOandButterfly/</url>
     <content><![CDATA[<h2 id="前言">前言</h2>
@@ -100,32 +126,6 @@ image: /img/lucky_star.jpg</p>
       </tags>
   </entry>
   <entry>
-    <title>Learn_cs61a_on_a_VPS</title>
-    <url>/2026/09/14/Learn-cs61a-on-a-VPS/</url>
-    <content><![CDATA[<h2 id="事前准备">事前准备</h2>
-<p>由于电脑比较笨重，还要充电器。所以使用iPad+ssh连接VPS的方法。</p>
-<blockquote>
-<p>[!TIP]<br>
-在.ssh文件夹创建config并:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host (alias)</span><br><span class="line">   HostName (IP address)</span><br><span class="line">   User (like: root)</span><br><span class="line">   IdentityFile (like: ~/.ssh/id_ed25519)</span><br></pre></td></tr></table></figure>
-<p>后可以直接:<br>
-ssh alias<br>
-和<br>
-scp src alias:dst-folder</p>
-</blockquote>
-<p>进行测试需安装 pytest 和 pygrader。</p>
-<h2 id=""></h2>
-]]></content>
-      <categories>
-        <category>cs61a</category>
-      </categories>
-      <tags>
-        <tag>VPS</tag>
-        <tag>Linux</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Matrix_deployment</title>
     <url>/2026/09/06/encoutered_in_snikket/</url>
     <content><![CDATA[<p>其实我本来想部署matrix的。但是看了</p>
@@ -166,5 +166,24 @@ scp src alias:dst-folder</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>surveyor&#39;s_formula</title>
+    <url>/2026/09/26/surveyor-s-formula/</url>
+    <content><![CDATA[<h1>CORE: 一个多边形的面积 = 每条边与原点形成的有向三角形面积之和（画一画就可以看来了）。</h1>
+<p>对于一个n边形，其面积公式为：</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>=</mo><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mrow><mo fence="true">∣</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></munderover><mo stretchy="false">(</mo><mi>det</mi><mo>⁡</mo><mo stretchy="false">(</mo><mrow><mo fence="true">[</mo><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><msub><mi>x</mi><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>y</mi><mi>i</mi></msub></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><msub><mi>x</mi><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msub><mo separator="true">,</mo><msub><mi>y</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo fence="true">∣</mo></mrow></mrow><annotation encoding="application/x-tex">
+A_n = 1/2\left| \sum_{i=1}^{n-1}(\det (\begin{bmatrix}
+    x_i,y_i \\
+    x_{x+1},y_{i+1}
+\end{bmatrix})) \right|
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:3.0788em;vertical-align:-1.2777em;"></span><span class="mord">1/2</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.75em;"><span style="top:-3.75em;"><span class="pstrut" style="height:5em;"></span><span style="width:0.333em;height:3em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.333em" height="3em" viewBox="0 0 333 3000"><path d="M145 15 v585 v1800 v585 c2.667,10,9.667,15,21,15
+c10,0,16.667,-5,20,-15 v-585 v-1800 v-585 c-2.667,-10,-9.667,-15,-21,-15
+c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v1800 v585 h43z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.25em;"><span></span></span></span></span></span></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8011em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mop">det</span><span class="mopen">(</span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">[</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="katex-sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">]</span></span></span><span class="mclose">))</span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.75em;"><span style="top:-3.75em;"><span class="pstrut" style="height:5em;"></span><span style="width:0.333em;height:3em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.333em" height="3em" viewBox="0 0 333 3000"><path d="M145 15 v585 v1800 v585 c2.667,10,9.667,15,21,15
+c10,0,16.667,-5,20,-15 v-585 v-1800 v-585 c-2.667,-10,-9.667,-15,-21,-15
+c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v1800 v585 h43z"/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.25em;"><span></span></span></span></span></span></span></span></span></span></span></span></eqn></section>]]></content>
+      <tags>
+        <tag>Math</tag>
+      </tags>
   </entry>
 </search>
